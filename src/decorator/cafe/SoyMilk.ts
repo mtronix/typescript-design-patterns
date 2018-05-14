@@ -1,11 +1,11 @@
 import { DrinkDecorator } from './DrinkDecorator';
 
 export class SoyMilk extends DrinkDecorator {
-  getDescription() {
+  public getDescription() {
     return this.drink.getDescription() + ', soy milk';
   }
 
-  getPrice() {
+  public getPrice() {
     return this.drink.getPrice() + 0.15;
   }
 }

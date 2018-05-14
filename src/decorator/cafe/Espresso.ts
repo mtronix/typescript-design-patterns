@@ -1,11 +1,11 @@
 import { Drink } from './Drink';
 
 export class Espresso extends Drink {
-  getDescription() {
+  public getDescription() {
     return 'Espresso coffee';
   }
 
-  getPrice() {
+  public getPrice() {
     return 1.99;
   }
 }

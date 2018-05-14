@@ -1,7 +1,7 @@
 import { Quacking } from './Quacking';
 
 export class LoudQuack implements Quacking {
-  quack() {
+  public quack() {
     console.log('quack, Quack, QUACK!!! I can quack very loud');
   }
 }

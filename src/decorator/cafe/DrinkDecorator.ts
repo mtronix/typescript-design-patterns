@@ -3,17 +3,17 @@ import { Drink } from './Drink';
 export class DrinkDecorator extends Drink {
   protected drink: Drink;
 
-  constructor(drink: Drink) {
+  public constructor(drink: Drink) {
     super();
 
     this.drink = drink;
   }
 
-  getDescription() {
+  public getDescription() {
     return this.drink.getDescription();
   }
 
-  getPrice() {
+  public getPrice() {
     return this.drink.getPrice();
   }
 }

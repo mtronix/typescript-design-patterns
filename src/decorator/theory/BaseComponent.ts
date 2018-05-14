@@ -1,11 +1,11 @@
 import { Component } from './Component';
 
 export class BaseComponent implements Component {
-  methodA() {
+  public methodA() {
     return 'BaseComponent.methodA()';
   }
 
-  methodB() {
+  public methodB() {
     return 'BaseComponent.methodB()';
   }
 }

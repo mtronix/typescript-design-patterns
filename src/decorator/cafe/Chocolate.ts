@@ -1,11 +1,11 @@
 import { DrinkDecorator } from './DrinkDecorator';
 
 export class Chocolate extends DrinkDecorator {
-  getDescription() {
+  public getDescription() {
     return this.drink.getDescription() + ', chocolate';
   }
 
-  getPrice() {
+  public getPrice() {
     return this.drink.getPrice() + 0.20;
   }
 }

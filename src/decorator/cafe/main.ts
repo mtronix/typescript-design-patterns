@@ -25,13 +25,13 @@ console.log(`Heavily roasted coffee with doubled chocolate and whipped cream pri
 // Decaffeinated coffee with milk
 let decaffeinated = new Decaffeinated();
 
-decaffeinated = new Milk(decaffeinated);
+decaffeinated = new Milk(decaffeinated);            // Add milk
 
 console.log(`Decaffeinated coffee with milk price: ${decaffeinated.getPrice()}`);
 
 // Star Cafe special with soy milk
 let starCafeSpecial = new StarCafeSpecial();
 
-starCafeSpecial = new SoyMilk(starCafeSpecial);
+starCafeSpecial = new SoyMilk(starCafeSpecial);     // Add soy milk
 
 console.log(`Star Cafe special with soy milk price: ${starCafeSpecial.getPrice()}`);

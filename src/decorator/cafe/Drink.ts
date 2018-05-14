@@ -1,7 +1,7 @@
 export abstract class Drink {
   private description = 'Unknown drink';
 
-  getDescription() {
+  public getDescription() {
     return this.description;
   }
 

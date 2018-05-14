@@ -1,11 +1,11 @@
 import { DrinkDecorator } from './DrinkDecorator';
 
 export class WhippedCream extends DrinkDecorator {
-  getDescription() {
+  public getDescription() {
     return this.drink.getDescription() + ', whipped cream';
   }
 
-  getPrice() {
+  public getPrice() {
     return this.drink.getPrice() + 0.10;
   }
 }

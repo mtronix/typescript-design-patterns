@@ -6,11 +6,11 @@ import { ComponentDecorator } from './ComponentDecorator';
  * you can omit some methods in this decorator (for example you want to chane behaviour of only one method)
  */
 export class FirstDecorator extends ComponentDecorator implements Component {
-  methodA() {
+  public methodA() {
     return `<FirstDecorator>${this.decoratedComponent.methodA()}</FirstDecorator>`;
   }
 
-  methodB() {
+  public methodB() {
     return `<FirstDecorator>${this.decoratedComponent.methodB()}</FirstDecorator>`;
   }
 }

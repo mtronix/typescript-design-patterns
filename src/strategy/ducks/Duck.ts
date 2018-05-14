@@ -5,35 +5,35 @@ export class Duck {
   protected flying: Flying;
   protected quacking: Quacking;
 
-  setFlying(flying: Flying) {
+  public setFlying(flying: Flying) {
     this.flying = flying;
   }
 
-  getFlying() {
+  public getFlying() {
     return this.flying;
   }
 
-  setQuacking(quacking: Quacking) {
+  public setQuacking(quacking: Quacking) {
     this.quacking = quacking;
   }
 
-  getQuacking() {
+  public getQuacking() {
     return this.quacking;
   }
 
-  fly() {
+  public fly() {
     this.flying.fly();
   }
 
-  quack() {
+  public quack() {
     this.quacking.quack();
   }
 
-  swim() {
+  public swim() {
     console.log('swim() every duck can swim');
   }
 
-  show() {
+  public show() {
     console.log('show() every duck can be shown');
   }
 }

@@ -3,15 +3,15 @@ import { Strategy } from './Strategy';
 export class Context {
   private strategy: Strategy;
 
-  setStrategy(strategy: Strategy) {
+  public setStrategy(strategy: Strategy) {
     this.strategy = strategy;
   }
 
-  getStrategy() {
+  public getStrategy() {
     return this.strategy;
   }
 
-  execute() {
+  public execute() {
     this.strategy.execute();
   }
 }

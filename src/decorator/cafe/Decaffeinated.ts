@@ -1,11 +1,11 @@
 import { Drink } from './Drink';
 
 export class Decaffeinated extends Drink {
-  getDescription() {
+  public getDescription() {
     return 'Decaffeinated coffee';
   }
 
-  getPrice() {
+  public getPrice() {
     return 1.05;
   }
 }

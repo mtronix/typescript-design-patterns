@@ -11,15 +11,15 @@ export abstract class ComponentDecorator implements Component {
    * Using decorate method has advantage, because you can decorate many components with
    * the same instance of decorator by setting few components in decorate method periodically
    */
-  decorate(component: Component) {
+  public decorate(component: Component) {
     this.decoratedComponent = component;
   }
 
-  methodA() {
+  public methodA() {
     return this.decoratedComponent.methodA();
   }
 
-  methodB() {
+  public methodB() {
     return this.decoratedComponent.methodB();
   }
 }
