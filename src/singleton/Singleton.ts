@@ -1,13 +1,13 @@
 export class Singleton {
-  private static _instance: Singleton;
+  private static instance: Singleton;
 
   private constructor() {}
 
   public static getInstance() {
-    if (this._instance === null) {
-      this._instance = new Singleton();
+    if (this.instance === null) {
+      this.instance = new Singleton();
     }
 
-    return this._instance;
+    return this.instance;
   }
 }
